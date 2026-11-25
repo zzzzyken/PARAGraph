@@ -1,0 +1,53 @@
+# ---- model weights (hosted outside git; see README "Checkpoints") ----
+checkpoints/
+checkpoints_*/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# ---- run outputs that also hold weights / per-run artefacts ----
+baseline/
+ablation/
+runs/
+events.out.tfevents.*
+
+# ---- logs ----
+logs/
+*.log
+nohup.out
+
+# ---- generated figures and analysis dumps (regenerate with the scripts) ----
+*.png
+*.pdf
+*.tif
+figures/
+tsne_plots/
+ig_plots_ddr/
+swin_attention_maps*/
+analysis_*/
+vis_*/
+test_results/
+interpret_*/
+robustness_*/
+ddr_gt/
+cross_dataset_*.json
+
+# ---- datasets are never committed ----
+dataset/
+datasets/
+
+# ---- third-party code kept locally, fetch from upstream instead ----
+drive-vessels-unet-master/
+
+# ---- superseded early docs kept for reference only ----
+docs/legacy/
+
+# ---- python / OS / editor ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+*.swp
